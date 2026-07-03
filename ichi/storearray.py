@@ -12,4 +12,4 @@ def store_array():
 arr = store_array()
 print("Array:", arr)
 print("sorted array: ", sorted(arr))
-print("bubble sort: ",  sort)
+print("bubble sort: ", )

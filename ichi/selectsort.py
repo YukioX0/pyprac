@@ -20,4 +20,5 @@ for i in range(n):
     
 print("Pairs: ", pairs)
 print("Sorted Pairs: ", sorted(pairs))
+
     
