@@ -1,6 +1,6 @@
 def print_inverted_stars(n):
-    for i in range (n):
-        for j in range (i):
+    for i in range (0, n):
+        for j in range (0, n-i):
             print ("*", end = " ");
         print ();
 
