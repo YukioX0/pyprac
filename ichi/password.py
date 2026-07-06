@@ -1,8 +1,8 @@
 def strong(p):
-    if len(p)>= 8:
-        print("Strong Password")
+    if len(p) >= 8 and '@' in p and '#' in p:
+        print("Strong password")
     else:
-        print("Weak Password");
+        print("Weak password")
 
 def user_input():
     p = input ("Enter the password : ");
