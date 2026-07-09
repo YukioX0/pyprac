@@ -1,47 +1,18 @@
-#I want to create a simple calculator that can perform basic arithmetic operations
-#  like addition, subtraction, multiplication, division, and modulus.
-#  The user will input two numbers and the desired operation, and the calculator will return the result.
-# I want to make it such that the user can choose to use calculator again or exit the program after each calculation.
+# 1. Logical Operators
+# Python
+# Take three subject marks from user (English, Math, Science).
+# Check if the student has passed:
+# All marks should be >= 40 (use 'and' operator)
+# If any one subject is < 40, print "Fail"
 
+x = int(input("Enter marks for English: "))
+y = int(input("Enter marks for maths: "))
+z = int(input("Enter marks for Python: "))
 
-def calculate(x, y, operation):
-    if operation == "+":
-        return float(x) + float(y)
-    elif operation == "-":
-        return int(x) - int(y)
-    elif operation == "*":
-        return float(x) * float(y)
-    elif operation == "/":
-        return float(x) / float(y)
-    elif operation == "%":
-        return float(x) % float(y)
+def result():
+    if x >= 40 and y >= 40 and z >= 40:
+        print("pass")
     else:
-            return "Invalid operation"
+        print("fail")
 
-M = input(" X or C : ")
-while M == "C":
-    # Use it
-    x = input("Enter 1st num: ")
-    y = input("Enter 2nd num: ")
-    operation = input("Enter the operation (+,-,/,*,%): ")
-    print("Result:", calculate(x, y, operation))
-    M = input(" X or C : ")
-
-else:
-    print("Exiting the calculator. Goodbye!")
-
-def print_inverted_stars(n):
-    for i in range (0, n):
-        for j in range (0, n-i):
-            print ("*", end = " ");
-        print ();
-
-def user_input():
-    n = int(input ("Enter the no of rows : "));
-    execute = print_inverted_stars(n);
-    return n;
-
-
-n = user_input();
-
-
+result()
