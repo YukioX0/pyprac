@@ -23,7 +23,9 @@ check()
 # 3. City name without first and last character
 
 city = input("enter your city name: ")
-city = []
 
 def rev():
-    return 
+    print("city name without first and last char.: " +city[1:-1])
+    print()
+
+rev()  
